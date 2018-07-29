@@ -1,0 +1,5 @@
+refer Distributed_Testing_with_Selenium_Grid.pdf
+also run bat file for c drive 
+nodeMac.bat
+nodeWindow.bat
+hub.bat

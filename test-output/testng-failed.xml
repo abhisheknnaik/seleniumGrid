@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Parallel Tests]" parallel="tests">
+  <parameter name="platform" value="Windows"/>
+  <parameter name="browser" value="Internet Explorer"/>
+  <parameter name="url" value="https://www.google.co.in/"/>
+  <parameter name="version" value="8"/>
+  <test name="Test Window(failed)" parallel="tests">
+    <parameter name="platform" value="Windows"/>
+    <parameter name="browser" value="Internet Explorer"/>
+    <parameter name="url" value="https://www.google.co.in/"/>
+    <parameter name="version" value="8"/>
+    <classes>
+      <class name="TestNgGridJenkins.TestNgGridJenkins.SeGridTest">
+        <methods>
+          <include name="testBmiCalculator"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestNgGridJenkins.TestNgGridJenkins.SeGridTest -->
+    </classes>
+  </test> <!-- Test Window(failed) -->
+</suite> <!-- Failed suite [Parallel Tests] -->

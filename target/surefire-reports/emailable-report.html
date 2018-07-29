@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test Mac</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">1.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test Mac &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">TestNgGridJenkins.TestNgGridJenkins.SeGridTest</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1532869460754</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test Mac &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">TestNgGridJenkins.TestNgGridJenkins.SeGridTest</td><td><a href="#m2"><b>afterTest</b>  </a></td><td class="numi">1</td><td>1532869462492</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test Mac &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">TestNgGridJenkins.TestNgGridJenkins.SeGridTest</td><td><a href="#m3"><b>testBmiCalculator</b>  ("Test Bmi Calculator")</a></td><td class="numi">1</td><td>1532869462492</td><td class="numi">0</td></tr>
+</table>
+<h1>Test Mac</h1>
+<h2 id="m1">TestNgGridJenkins.TestNgGridJenkins.SeGridTest:setup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr>
+<tr class="param stripe"><td>Windows</td>
+<td>InternetExplorer</td>
+<td>8</td>
+<td>https://www.google.co.in/</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="4">
+<p>Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=IE, ignoreProtectedModeSettings=true, version=8, platform=WINDOWS}]
+Command duration or timeout: 140 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at TestNgGridJenkins.TestNgGridJenkins.SeGridTest.setup(SeGridTest.java:57)
+<br/>19 lines not shown
+<p>Caused by Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=IE, ignoreProtectedModeSettings=true, version=8, platform=WINDOWS}]
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+<br/>at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+<br/>at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+<br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+<br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+<br/>at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+<br/>at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+<br/>at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+<br/>at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+<br/>at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+<br/>at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+<br/>at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+<br/>at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+<br/>at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+<br/>at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+<br/>at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+<br/>at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+<br/>at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+<br/>at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+<br/>at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+<br/>at java.lang.Thread.run(Thread.java:748)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">TestNgGridJenkins.TestNgGridJenkins.SeGridTest:afterTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">TestNgGridJenkins.TestNgGridJenkins.SeGridTest:testBmiCalculator</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

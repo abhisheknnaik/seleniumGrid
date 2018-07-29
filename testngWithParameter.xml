@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Tests" verbose="1" thread-count="2"
+	parallel="tests">
+	<tests>
+		<test name="Test Mac">
+			<parameters>
+		<!--		<parameter name="platform" value="MAC" />
+				<parameter name="browser" value="firefox" />
+				<parameter name="version" value="40" />-->
+				<parameter name="url" value="https://www.google.co.in/" />
+			</parameters>
+			<classes>
+				<class name="TestNgGridJenkins.TestNgGridJenkins.SeGridTest" />
+			</classes>
+		</test>
+	</tests>
+	<!-- Test -->
+
+</suite> <!-- Suite -->

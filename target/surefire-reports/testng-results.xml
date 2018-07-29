@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel Tests" duration-ms="1739" started-at="2018-07-29T13:04:20Z" finished-at="2018-07-29T13:04:22Z">
+    <groups>
+    </groups>
+    <test name="Test Mac" duration-ms="1739" started-at="2018-07-29T13:04:20Z" finished-at="2018-07-29T13:04:22Z">
+      <class name="TestNgGridJenkins.TestNgGridJenkins.SeGridTest">
+        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNgGridJenkins.TestNgGridJenkins.SeGridTest@566776ad]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-29T18:34:20Z" finished-at="2018-07-29T18:34:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[InternetExplorer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=IE, ignoreProtectedModeSettings=true, version=8, platform=WINDOWS}]
+Command duration or timeout: 140 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DELL-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=IE, ignoreProtectedModeSettings=true, version=8, platform=WINDOWS}]
+Command duration or timeout: 140 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DELL-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+	at TestNgGridJenkins.TestNgGridJenkins.SeGridTest.setup(SeGridTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities [{ensureCleanSession=true, browserName=IE, ignoreProtectedModeSettings=true, version=8, platform=WINDOWS}]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DELL-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:115)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:587)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:221)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:499)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.seleniumhq.jetty9.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	... 1 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="testBmiCalculator()[pri:0, instance:TestNgGridJenkins.TestNgGridJenkins.SeGridTest@566776ad]" name="testBmiCalculator" duration-ms="0" started-at="2018-07-29T18:34:22Z" description="Test Bmi Calculator" finished-at="2018-07-29T18:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBmiCalculator -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:TestNgGridJenkins.TestNgGridJenkins.SeGridTest@566776ad]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-07-29T18:34:22Z" finished-at="2018-07-29T18:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- TestNgGridJenkins.TestNgGridJenkins.SeGridTest -->
+    </test> <!-- Test Mac -->
+  </suite> <!-- Parallel Tests -->
+</testng-results>

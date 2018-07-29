@@ -1,0 +1,26 @@
+{
+"capabilities": 
+   [
+     {
+      "seleniumProtocol": "WebDriver",
+      "browserName": "internet explorer",
+      "version": "8",
+      "maxInstances": 1,
+      "platform" : "WINDOWS"
+     }
+   ],
+	"configuration": 
+{
+	"port": 8989,
+	"register": true,
+	"host": "192.168.43.185",
+	"proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+	"maxSession": 2,
+	"hubHost": "192.168.43.185",
+	"role": "webdriver",
+	"registerCycle": 5000,
+	"hub": "http://192.168.43.185:4444/grid/register",
+	"hubPort": 4444,
+	"remoteHost": "http://192.168.43.185:8989"
+}
+}
